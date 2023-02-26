@@ -5,7 +5,7 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
-  <!-- Первый сервлет -->
+
   <servlet>
     <servlet-name>FirstServlet</servlet-name>
     <servlet-class>FirstServlet</servlet-class>
@@ -16,7 +16,6 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
-  <!-- Сервлет с сессиями-->
   <servlet>
     <servlet-name>SessionExample</servlet-name>
     <servlet-class>SessionExample</servlet-class>
@@ -27,7 +26,7 @@
     <url-pattern>/session</url-pattern>
   </servlet-mapping>
 
-  <!--Сервлет с куки-->
+
   <servlet>
     <servlet-name>CookieServlet</servlet-name>
     <servlet-class>CookieServlet</servlet-class>
@@ -38,18 +37,18 @@
     <url-pattern>/cookies</url-pattern>
   </servlet-mapping>
 
-  <!-- Получить куки-->
+
+
   <servlet>
     <servlet-name>GetCookiesServlet</servlet-name>
     <servlet-class>GetCookieServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>GetCookieServlet</servlet-name>
+    <servlet-name>GetCookiesServlet</servlet-name>
     <url-pattern>/get-cookies</url-pattern>
   </servlet-mapping>
 
-  <!-- Удалить куки-->
   <servlet>
     <servlet-name>DeleteCookiesServlet</servlet-name>
     <servlet-class>DeleteCookiesServlet</servlet-class>

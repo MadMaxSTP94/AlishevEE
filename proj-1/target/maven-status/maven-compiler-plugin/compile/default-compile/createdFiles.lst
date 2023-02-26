@@ -1,3 +1,6 @@
-model\Cart.class
-SessionExample.class
 FirstServlet.class
+CookieServlet.class
+DeleteCookiesServlet.class
+model\Cart.class
+GetCookieServlet.class
+SessionExample.class
