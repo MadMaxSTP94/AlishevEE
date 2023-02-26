@@ -13,4 +13,19 @@
     <servlet-name>FirstServlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SessionExample</servlet-name>
+    <servlet-class>SessionExample</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionExample</servlet-name>
+    <url-pattern>/session</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CookieServlet</servlet-name>
+    <servlet-class>CookieServlet</servlet-class>
+  </servlet>
+
 </web-app>

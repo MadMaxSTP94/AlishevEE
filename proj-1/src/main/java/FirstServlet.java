@@ -1,3 +1,4 @@
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -7,15 +8,30 @@ import java.io.PrintWriter;
 
 public class FirstServlet extends HttpServlet {
 
-    @Override
-    protected void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
-        //httpServletRequest.getRequestDispatcher("page1.jsp").forward(httpServletRequest,httpServletResponse);
-        /*
+    /*
+    Примеры использования Session
+    1.Счетчик посещений
+    2.
+    * */
 
-        * */
-        PrintWriter pw = httpServletResponse.getWriter();
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        /*
+        <%@ page import=""%>
+        PrintWriter pw = response.getWriter();
 
         pw.println("<html><h1>hello world</h1></html>");
+        * */
+
+        //Redirect можем отправлять на внешние и внутренние url
+        //response.sendRedirect("/testJSP.jsp");
+
+        //Forward только на внутренние url
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/testJSP.jsp");
+        dispatcher.forward(request, response);
+
+
+
     }
 
     @Override
